@@ -16,7 +16,8 @@
       width: 350px; 
       height: 374px;
       background: #FFFFFF;
-      box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+      -webkit-box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+              box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
       border-radius: 15px;
       margin: auto;
       position: absolute;
@@ -24,10 +25,19 @@
       bottom: 0px;
       left: 0px;
       right: 0px;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;      
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;      
   }
   .card-header {
       height: 140px;    
@@ -41,15 +51,23 @@
       background-color:#41CBD3;
   }
   .user-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       position: absolute;
       top: 92px;
   }
   .user-photo {
       border-radius: 50%;
-      object-fit: cover;
+      -o-object-fit: cover;
+         object-fit: cover;
   }
   .user-name {
       font-style: normal;
@@ -75,14 +93,24 @@
       height: 88px;
       width: 100%;
       list-style: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
       border-top: 1px solid #E8E9EC;
   }
   .statistics-cell {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       width: 33.3%;
       padding-top: 25px;
   }
